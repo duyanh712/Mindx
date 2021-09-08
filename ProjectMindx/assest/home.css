@@ -277,3 +277,92 @@ header ul li a:hover {
 .start1, .grid-container, .start2, .item2 {
     padding: 0px 80px;
 }
+
+
+/* Style for footer */
+
+.content-image {
+    height: 300px;
+    border-radius: 15px;
+}
+
+.section-row {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.column {
+    float: left;
+    width: 31.5%;
+    margin: 10px 10px;
+    padding: 0px 8px;
+}
+
+
+.row {
+    width: 1200px;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #484848;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    float: left;
+    width: 25%;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.unlist {
+    padding: 10px 0px;
+    line-height: 30px;
+}
+
+.bottom-left {
+    display: inline-block;
+    color: #484848;
+}
+
+.bottom-content-left {
+    display: inline-block;
+}
+
+.dot {
+    display: inline-block;
+    width: 19px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #484848;
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+h3, p {
+    line-height: 2;
+}
