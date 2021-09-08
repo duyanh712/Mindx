@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body {
+    background: white;
+    min-height: 200vh;
+}
+/********************* HEADER *****************/
+/* Styles nav bar */
+header .nav{
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+header .logo1 {
+    position: relative;
+    transition: 0.6s;
+    width: 100px;
+}
+header .logo2 {
+    position: relative;
+    width: 100px;
+    transition: 0.6s;
+    display: none;
+   
+}
+header ul {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+}
+
+header ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 0px 5px;
+}
+header ul li a {
+    position: relative;
+    margin: 0px 15px ;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px; 
+    transition: 0.6s;
+}
+header ul li a:hover {
+    color: #fe654f;
+}
+
+/* Style to banner */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: url(img/img-banner.png);
+}
+
+#banner .text-content {
+    position: absolute;
+    bottom: 198px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#banner .text-heading {
+    color: #313131;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 20px 50px;
+}
+
+#banner button {
+    box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    border: none;
+    border-radius: 54px;
+}
+
+#banner .text-description {
+    padding: 20px 50px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 550;
+    background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/* #banner .text-description {
+    background-color: #fff;
+    padding: 20px 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 550;
+    border-radius: 54px;
+    margin-top: 20px;
+    box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+    background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
+
+#banner button:hover {
+    box-shadow: 0px 6px 25px rgb(0 0 0 / 12%);
+}
+/* Style button top right */
+.btn-book {
+    display: block;
+    background-color: #fff;
+    color: #313131;
+    padding: 5px 5px 5px 9px;
+    border-radius: 2rem;
+    transition: 0.6s;
+    width: 77px;
+    border: none;
+}
+
+.btn-book:hover {
+    background-color: #d3d3d3;
+    color: #fe654f;
+    cursor: pointer;
+}
+
+#icon-profile {
+    width: 25px;
+}
+
+/* .close-dropdown {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+} */
+#icon-menu {
+    width: 20px;
+}
+
+#myDropdown {
+    display: none;
+}
+.dropdown-content {
+    
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    right: 100px;
+    top: 70px;
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Apply styles after scroll */
+.scrolling-active .nav{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 1);
+    padding: 20px 100px;
+    font-weight: 400;
+    height: 60px;
+}
+
+.scrolling-active .logo1 {
+    display: none;
+}
+
+.scrolling-active .logo2 {
+    display: block;
+    margin-right: 750px;
+    width: 110px;
+}
+
+.scrolling-active .nav a {
+    color: #313131;
+    
+}
+
+.scrolling-active .nav a:hover {
+    color: #fe654f;
+}
+
+.scrolling-active .btn-book {
+    display: none;
+}
+
+
