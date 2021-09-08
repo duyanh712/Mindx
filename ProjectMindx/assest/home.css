@@ -256,7 +256,7 @@ header ul li a:hover {
 }
 
 .start2 {
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .item2 {
@@ -264,6 +264,7 @@ header ul li a:hover {
 }
 
 .flex2 {
+    line-height: 2;
     margin: 10px 10px;
     text-decoration: none; 
     color: black;
@@ -274,35 +275,51 @@ header ul li a:hover {
     border-radius: 10px;
 }
 
-.start1, .grid-container, .start2, .item2 {
+.start1, .grid-container, .start2, .item2, .start3, .item3 {
     padding: 0px 80px;
 }
 
 
 /* Style for footer */
 
+.item3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.card {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
 .content-image {
-    height: 300px;
+    height: 339px;
     border-radius: 15px;
 }
 
-.section-row {
-    width: 1200px;
-    margin: 0px auto;
+.text-content {
+    line-height: 2;
 }
 
-.column {
-    float: left;
-    width: 31.5%;
-    margin: 10px 10px;
-    padding: 0px 8px;
+.foot {
+    padding: 20px 80px;
 }
 
+.row1 {
+    display: flex;
+    border-bottom: 1px solid rgb(167, 155, 155);
+}
 
 .row {
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+    margin: 10px 0px;
 }
+
+.bottom-content-left a:hover {
+    text-decoration: underline;
+} 
 
 li {
     list-style-type: none;
@@ -318,7 +335,7 @@ li a {
 }
 
 .section {
-    float: left;
+    justify-content: space-between;    
     width: 25%;
     padding: 12px;
     margin-top: 20px;
@@ -363,6 +380,3 @@ li a {
     cursor: pointer;
 }
 
-h3, p {
-    line-height: 2;
-}
