@@ -60,6 +60,7 @@ header ul li a {
     letter-spacing: 2px;
     font-weight: 500px; 
     transition: 0.6s;
+    font-family: 'Poppins', sans-serif;
 }
 header ul li a:hover {
     color: #fe654f;
@@ -87,6 +88,7 @@ header ul li a:hover {
     font-weight: 500;
     line-height: 22px;
     padding: 20px 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #banner button {
@@ -104,6 +106,7 @@ header ul li a:hover {
     background: linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    font-family: 'Poppins', sans-serif;
 }
 /* #banner .text-description {
     background-color: #fff;
