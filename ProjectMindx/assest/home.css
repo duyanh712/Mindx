@@ -313,7 +313,7 @@ li a {
     color: #484848;
 }
 
-li a:hover {
+.unlist li a:hover {
     text-decoration: underline;
 }
 
