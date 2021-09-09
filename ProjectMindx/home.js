@@ -17,3 +17,10 @@ window.addEventListener("mouseup", function(event) {
   }
 })
 
+// Modal Contact
+document.getElementById("cont").addEventListener("click",function() {
+  document.querySelector(".contact").style.display = "flex";
+})
+document.querySelector(".close").addEventListener("click",function() {
+  document.querySelector(".contact").style.display = "none";
+})
