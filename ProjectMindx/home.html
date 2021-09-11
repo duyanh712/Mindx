@@ -48,36 +48,36 @@
     <div class="start1">
         <h2><b>Discover recent destinations</b></h2>
     </div>
-    <div class="grid-container">
-      <a href="#modal-content0" class="grid">
+    <div id="grid-container" class="grid-container">
+      <a id="grid0" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Hanoi</b><br>15-minute drive</span>
       </a>
-      <a href="#modal-content1" class="grid">
+      <a id="grid1" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Ninhbinh</b><br>1,5-hour drive</span>
       </a>
-      <a href="#modal-content2" class="grid">
+      <a id="grid2" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Haiphong</b><br>1,5-hour drive</span>
       </a>
-      <a href="#modal-content3" class="grid">
+      <a id="grid3" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/20e74de0-0eb8-4fca-afb8-b111875acdf5.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Donghoi</b><br>6,5-hour drive</span>
       </a>
-      <a href="#modal-content4" class="grid">
+      <a id="grid4" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Sontay</b><br>45-minute drive</span>
       </a>
-      <a href="#modal-content5" class="grid">
+      <a id="grid5" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Samson</b><br>2,5-hour drive</span>
       </a>
-      <a href="#modal-content6" class="grid">
+      <a id="grid6" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Haiduong City</b><br>1-hour drive</span>
       </a>
-      <a href="#modal-content7" class="grid">
+      <a id="grid7" class="grid">
         <img class="image" src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240">
         <span class="grid-words"><b>Thanhhoa</b><br>2-hour drive</span>
       </a>
@@ -258,12 +258,13 @@
     <!--MODAL CONTACT-->
 <div class="contact">
     <div class="container">
-        <div class="close">&times;</div>
+        <div class="close0">&times;</div>
         <div class="text">Contact Us</div>
         <form action="">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone Number">
+            <input id="name" type="text" placeholder="Name">
+            <input id="email" type="text" placeholder="Email">
+            <div id="result"></div>
+            <input id="phone-number" type="text" placeholder="Phone Number">
             <input type="text" placeholder="Message">
             <a href="" class="button">Send</a>
         </form>
@@ -271,37 +272,37 @@
 </div>
 
 <!--MODAL CONTENT-->
-<div class="modal-content0" id="modal-content0">
+<div class="modal-content" id="modal-content0">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Hà Nội là thủ đô, là thành phố trực thuộc trung ương và cũng là một đô thị loại đặc biệt của nước Cộng hòa Xã hội chủ nghĩa Việt Nam. Hà Nội nằm về phía tây bắc của trung tâm vùng đồng bằng châu thổ sông Hồng, với địa hình bao gồm vùng đồng bằng trung tâm và vùng đồi núi ở phía bắc và phía tây thành phố. Với diện tích 3.358,6 km2 và dân số 8,05 triệu người (2019), Hà Nội là thành phố có diện tích lớn nhất Việt Nam, đồng thời cũng là thành phố đông dân thứ hai và có mật độ dân số cao thứ hai trong 63 đơn vị hành chính cấp tỉnh của Việt Nam, nhưng phân bố dân số không đồng đều. Hà Nội có 30 đơn vị hành chính cấp huyện, gồm 12 quận, 17 huyện và 1 thị xã.</div>
     </div>
 </div>
 
-<div id="modal-content1">
+<div class="modal-content" id="modal-content1">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Ninh Bình thuộc khu vực đồng bằng sông Hồng dù chỉ có 2 huyện duyên hải là Yên Khánh và Kim Sơn có địa hình bằng phẳng. Quy hoạch xây dựng phát triển kinh tế xếp Ninh Bình vào vùng duyên hải Bắc Bộ. Vùng đất Ninh Bình xưa là kinh đô của Việt Nam giai đoạn 968–1010 với 3 triều đại Đinh, Tiền Lê, Tiền Lý và cũng là địa bàn quan trọng về quân sự qua các thời kỳ lịch sử. Với vị trí đặc biệt về giao thông, địa hình, lịch sử văn hóa đồng thời sở hữu hai khu vực là di sản thế giới và khu dự trữ sinh quyển thế giới, Ninh Bình hiện là một trung tâm du lịch có tiềm năng phong phú và đa dạng. Ninh Bình là tỉnh đầu tiên của đồng bằng sông Hồng có 2 thành phố trực thuộc tỉnh (Ninh Bình, Tam Điệp) vào năm 2015).</div>
     </div>
 </div>
 
-<div id="modal-content2">
+<div class="modal-content" id="modal-content2">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Hải Phòng còn được gọi là Đất Cảng hay Thành phố Cảng. Việc hoa phượng đỏ được trồng rộng rãi nơi đây, và sắc hoa đặc trưng trên những con phố, cũng khiến Hải Phòng được biết đến với mỹ danh Thành phố Hoa Phượng Đỏ. Không chỉ là một thành phố cảng công nghiệp, Hải Phòng còn là một trong những nơi có tiềm năng du lịch rất lớn. Hải Phòng hiện lưu giữ nhiều nét hấp dẫn về kiến trúc, bao gồm kiến trúc truyền thống với các chùa, đình, miếu cổ và kiến trúc tân cổ điển Pháp tọa lạc trên các khu phố cũ. Đồng thời, Hải Phòng hiện đang sở hữu một khu dự trữ sinh quyển thế giới của Tổ chức Giáo dục, Khoa học và Văn hóa Liên Hợp Quốc (UNESCO) nằm tại Quần đảo Cát Bà, cùng với các bãi tắm và khu nghỉ dưỡng ở Đồ Sơn. Thành phố còn có những nét đặc trưng về văn hóa, đặc biệt là ẩm thực và các lễ hội truyền thống.</div>
     </div>
 </div>
 
-<div id="modal-content3">
+<div class="modal-content" id="modal-content3">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Thành phố Đồng Hới là một đơn vị hành chính gắn liền với quá trình hình thành, phát triển của tỉnh Quảng Bình. Trải qua nhiều biến cố thăng trầm của lịch sử, thành phố Đồng Hới vẫn không ngừng phát triển. Trong thời kỳ 1964 - 1975, cùng với Quảng Bình, Đồng Hới vừa là tuyến đầu đánnh Mỹ vừa là hậu phương trực tiếp của tiền tuyến lớn miền Nam anh hùng, nơi đã có những phong trào “xe chưa qua nhà không tiếc, đường chưa thông không tiếc máu, tiếc xương”, “chiến đấu giỏi, sản xuất giỏi”… những tên làng, tên đất, tên người như: dòng Nhật Lệ, Trận địa pháo lão dân quân Đức Ninh, em bé Bảo Ninh; các anh hùng: Quách Xuân Kỳ, Trương Pháp, Lê Trạm, Nguyễn Thị Suốt, Nguyễn Thị Khứu, Phạm Dung Hạnh, Phạm Thị Nghèng… đã đi vào lịch sử.</div>
     </div>
 </div>
 
-<div id="modal-content4">
+<div class="modal-content" id="modal-content4">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Thị xã Sơn Tây nằm ở phía tây bắc thành phố Hà Nội, là cửa ngõ phía tây của thủ đô, cách trung tâm thành phố 35 km về phía tây bắc theo Quốc lộ 32, cách trung tâm thành phố Hà Nội 45 km về phía tây, có vị trí địa lý:
             <ul>
               <li>Phía đông giáp huyện Phúc Thọ</li>
@@ -313,9 +314,9 @@
     </div>
 </div>
 
-<div id="modal-content5">
+<div class="modal-content" id="modal-content5">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Thành phố Sầm Sơn cách trung tâm thành phố Thanh Hóa 16 km về phía đông, cách thủ đô Hà Nội 176 km về phía đông nam, có vị trí địa lý:
             <ul>
             <li>Phía bắc giáp huyện Hoằng Hóa với sông Mã là ranh giới tự nhiên</li>
@@ -327,9 +328,9 @@
     </div>
 </div>
 
-<div id="modal-content6">
+<div class="modal-content" id="modal-content6">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Thành phố Hải Dương là thành phố trực thuộc tỉnh nằm ở trung tâm của tỉnh Hải Dương, cách Thủ đô Hà Nội 57 km về phía Đông, cách thành phố Hải Dương 45 km về phía Tây. Thành phố Hải Dương là đầu mối giao thông, giao lưu trong vùng tỉnh, vùng liên tỉnh; có vai trò thúc đẩy sự phát triển kinh tế, xã hội đối với tỉnh, klhu vực, vùng đồng bằng sông Hồng, vùng kinh tế trọng điểm Bắc Bộ.
               <ul>
             <li>Phía bắc giáp huyện Nam Sách;</li>
@@ -342,9 +343,9 @@
     </div>
 </div>
 
-<div id="modal-content7">
+<div class="modal-content" id="modal-content7">
     <div class="content-container">
-        <a href="" class="close">&times;</a>
+        <a class="close">&times;</a>
         <div class="content-text">Thanh Hóa là thành phố tỉnh lỵ của Thanh Hóa, Bắc Trung Bộ, Việt Nam. Đây là trung tâm hành chính, chính trị, kinh tế, văn hóa, khoa học kỹ thuật của tỉnh Thanh Hóa.</div>
     </div>
 </div>

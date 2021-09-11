@@ -416,7 +416,7 @@ input {
     margin: 16px auto;
 }
 
-.close {
+.close0, .close {
     font-size: 28px;
     position: absolute;
     top: 0;
@@ -438,38 +438,6 @@ input {
     display: none;
     z-index: 3;
   }
-
-  #modal-content0:target {
-      display: flex;
-  }
-
-  #modal-content1:target {
-    display: flex;
-}
-
-#modal-content2:target {
-    display: flex;
-}
-
-#modal-content3:target {
-    display: flex;
-}
-
-#modal-content4:target {
-    display: flex;
-}
-
-#modal-content5:target {
-    display: flex;
-}
-
-#modal-content6:target {
-    display: flex;
-}
-
-#modal-content7:target {
-    display: flex;
-}
 
 [id^=modal-content] ul li {
     list-style: circle;
