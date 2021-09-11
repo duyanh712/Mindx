@@ -128,7 +128,7 @@
                 </div>
             </a>
          
-            <a class="card" href="#"><img src="https://a0.muscache.com/im/pictures/f51f70fb-93b7-4974-86e8-1195b64f1353.jpg?im_w=720" class="content-image" >
+            <a class="card" onclick="openVideo()"><img src="https://a0.muscache.com/im/pictures/f51f70fb-93b7-4974-86e8-1195b64f1353.jpg?im_w=720" class="content-image" >
                 <div class="text-content">
                    <h3>Olympic & Paralympic</h3>
                    <p>Athletic activities</p>
@@ -353,6 +353,25 @@
         <div class="content-text">Thanh Hóa là thành phố tỉnh lỵ của Thanh Hóa, Bắc Trung Bộ, Việt Nam. Đây là trung tâm hành chính, chính trị, kinh tế, văn hóa, khoa học kỹ thuật của tỉnh Thanh Hóa.</div>
     </div>
 </div>
+
+
+<!--Modal Vid-->
+
+<div id="modal-vid">
+    <video autoplay muted loop id="myVideo">
+        <source src="./assest/img/Olympic2020.mp4" type="video/mp4">
+    </video>
+    <div style="margin: auto; width: 200px;" >
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+    <button id="closebtn" onclick="closeVideo()">X</button>
+    <div style="clear: both;"></div>
+</div>
+
+
+
+
+
 
     <script src="home.js"></script>
     

@@ -100,3 +100,38 @@ phoneInput.onfocus = function() {
 phoneInput.onblur = function() {
   document.getElementById("result2").style.display = "none";
 }
+
+
+// Modal Video
+
+function openVideo() {
+  var modalVideo = document.getElementById('modal-vid');
+  
+  if(modalVideo.style.display = "block") {
+      modalVideo.style.display = "none"
+  } 
+  if(modalVideo.style.display = "none") {
+      modalVideo.style.display = "block"
+  }
+}
+
+function closeVideo() {
+  var modalVideo = document.getElementById('modal-vid');
+  modalVideo.style.display = "none";
+}
+
+
+var video = document.getElementById("myVideo");
+
+
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+if (video.paused) {
+  video.play();
+  btn.innerHTML = "Pause";
+} else {
+  video.pause();
+  btn.innerHTML = "Play";
+}
+}
