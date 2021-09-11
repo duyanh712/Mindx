@@ -77,11 +77,26 @@ var close = document.getElementsByClassName("close");
     document.getElementById("modal-content7").style.display = "none";
   }
 
- 
-function validateEmail(email) {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+var nameInput = document.getElementById("name-input");
+nameInput.onfocus = function() {
+  document.getElementById("result0").style.display = "inline-block";
+}
+nameInput.onblur = function() {
+  document.getElementById("result0").style.display = "none";
 }
 
+var emailInput = document.getElementById("email");
+emailInput.onfocus = function() {
+  document.getElementById("result1").style.display = "inline-block";
+}
+emailInput.onblur = function() {
+  document.getElementById("result1").style.display = "none";
+}
 
-
+var phoneInput = document.getElementById("phone-number");
+phoneInput.onfocus = function() {
+  document.getElementById("result2").style.display = "inline-block";
+}
+phoneInput.onblur = function() {
+  document.getElementById("result2").style.display = "none";
+}
