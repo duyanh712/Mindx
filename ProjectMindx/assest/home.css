@@ -301,6 +301,10 @@ header ul li a:hover {
     border-radius: 15px;
 }
 
+.content-image:hover {
+    opacity: 0.8;
+}
+
 .text-content {
     line-height: 2;
 }

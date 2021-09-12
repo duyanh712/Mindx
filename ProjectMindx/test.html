@@ -60,8 +60,8 @@
     <a onclick="openVideo()">click to open</a>
 
     <div id="modal-vid">
-        <video autoplay muted loop id="myVideo">
-            <source src="olympic.mp4" type="video/mp4">
+        <video autoplay loop id="myVideo">
+            <source src="./assest/img/Olympic2020.mp4" type="video/mp4">
         </video>
         <div style="margin: auto; width: 200px;" >
             <button id="myBtn" onclick="myFunction()">Pause</button>
@@ -73,7 +73,7 @@
     <script>
         function openVideo() {
             var modalVideo = document.getElementById('modal-vid');
-            
+            btn.innerHTML = "Play";
             if(modalVideo.style.display = "block") {
                 modalVideo.style.display = "none"
             } 
@@ -85,6 +85,7 @@
         function closeVideo() {
             var modalVideo = document.getElementById('modal-vid');
             modalVideo.style.display = "none";
+            video.pause();
         }
 
         

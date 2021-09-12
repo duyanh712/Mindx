@@ -110,7 +110,7 @@ phoneInput.onblur = function() {
 
 function openVideo() {
   var modalVideo = document.getElementById('modal-vid');
-  
+  btn.innerHTML = "Play";
   if(modalVideo.style.display = "block") {
       modalVideo.style.display = "none"
   } 
@@ -122,6 +122,7 @@ function openVideo() {
 function closeVideo() {
   var modalVideo = document.getElementById('modal-vid');
   modalVideo.style.display = "none";
+  video.pause();
 }
 
 
