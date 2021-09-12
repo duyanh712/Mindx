@@ -12,15 +12,15 @@
         <h1>Login</h1>
         <form method="post">
             <div class="txt_field">
-                <input type="text" required>
+                <input id="username" type="text" required>
                 <span></span>
                 <label>Username</label>
             </div>
 
             <div class="txt_field">
-                <input type="password" required>
+                <input id="password" type="password" required>
                 <span></span>
-                <label>Password</label>
+                <label >Password</label>
             </div>
             <div class="pass">Forgot Password?</div>
             <!-- <input id="direct" type="button" value="Login"> -->
@@ -30,10 +30,6 @@
             </div>
         </form>
     </div>
-    <script>
-        document.getElementById("direct").onclick = function () {
-            document.location = "home-signed-in.html";
-        }
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
