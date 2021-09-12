@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+    background: white;
+  
+    
+}
+/********************* HEADER *****************/
+/* Styles nav bar */
+header .nav{
+    display: flex;
+    /* position: fixed; */
+    top:0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+header .logo2 {
+    position: relative;
+    width: 100px;
+    transition: 0.6s;
+    display: block;
+   
+}
+header ul {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+}
+
+header ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 0px 5px;
+}
+header ul li a {
+    position: relative;
+    margin: 0px 10px ;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500px; 
+    transition: 0.6s;
+    font-family: 'Poppins', sans-serif;
+}
+header ul li a:hover {
+    color: #fe654f;
+}
+/* Style main */
+#main {
+    display: flex;
+}
+.left-main {
+    background: black;
+    width: 50%;
+    height: 686px;
+}
+
+.left-main div {
+    color: whitesmoke;
+    font-size: 64px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 130px 50px 130px;
+    font-weight: 1000;
+}
+
+.left-main a {
+    padding-left: 280px;
+}
+
+.left-main button {
+    width: 194px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    background-image: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100% );
+}
+
+.banner-content {
+    top: -5px;
+    position: relative;
+    background:url(img/content-img.jpg) ;
+    height: 540px;
+    width: 90%;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+
+.banner-content .text-content {
+    position: absolute;
+    color: #fff;
+    padding: 0 80px;
+    width: 600px;
+    font-family: 'Poppins', sans-serif;
+    top:130px;
+}
+
+.banner-content button{
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 154px;
+    height: 48px;
+    padding:10px 24px;
+    border: none;
+}
+
+.banner-content .text-description {
+    font-size: 16px;
+}
+
+.text-maincontent {
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 300px;
+}
+
+.text-maincontent h1 {
+    font-size: 64px;
+    line-height: 68px;
+}
+.main-content {
+    display: flex;
+    padding: 50px 80px;
+}
+.main-content img {
+   width: 453px;
+   height: 340px;
+   border-radius: 20px;
+   padding: 10px;
+}
+
+/* Style footer */
+.item3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.card {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.content-image {
+    height: 339px;
+    border-radius: 15px;
+}
+
+.text-content {
+    line-height: 2;
+}
+
+.foot {
+    padding: 20px 80px;
+}
+
+.row1 {
+    display: flex;
+    border-bottom: 1px solid rgb(167, 155, 155);
+}
+
+.row {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.bottom-content-left a:hover {
+    text-decoration: underline;
+} 
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #484848;
+}
+
+.unlist li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    justify-content: space-between;    
+    width: 25%;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.unlist {
+    padding: 10px 0px;
+    line-height: 30px;
+}
+
+.bottom-left {
+    display: inline-block;
+    color: #484848;
+}
+
+.bottom-content-left {
+    display: inline-block;
+}
+
+.dot {
+    display: inline-block;
+    width: 19px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #484848;
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
