@@ -387,7 +387,7 @@ li a {
 }
 
 /* MODAL CONTACT */
-.form {
+.contact {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -400,17 +400,10 @@ li a {
 }
 
 .container {
-<<<<<<< HEAD
-    width: 400px;
+    width: 500px;
     height: 400px;
     background-color: white;
-    border-radius: 15px;
-=======
-    width: 500px;
-    height: 350px;
-    background-color: #F0F3F0;
     border-radius: 10px;
->>>>>>> b933c43b55e8a1875e98a88a4486f5e9b7292377
     position: relative;
     z-index: 1;
 }
@@ -422,17 +415,7 @@ li a {
     font-size: 20px;
 }
 
-<<<<<<< HEAD
-.close {
-=======
-input {
-    width: 50%;
-    display: block;
-    margin: 16px auto;
-}
-
 .close0, .close {
->>>>>>> b933c43b55e8a1875e98a88a4486f5e9b7292377
     font-size: 28px;
     position: absolute;
     top: 0;
@@ -442,7 +425,28 @@ input {
     text-decoration: none;
 }
 
-#form1 input[type=text] {
+#direct {
+    color:white;
+    font-family: sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #CC6666;
+    border:2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 5px;
+    margin-bottom: 15px;
+    width:50%;
+    box-sizing: border-box;
+    outline:0;
+    cursor: pointer;
+}
+
+#direct:hover {
+    background: #CC4949;
+}
+
+#name-input, #email, #phone-number, #content {
     color: black;
     font-family: sans-serif;
     font-weight:300;
@@ -459,30 +463,8 @@ input {
     outline:0;
 }
 
-#form1 #fcontent {
+#content {
     height: 100px;
-}
-
-#form1 input[type=submit] {
-    color:white;
-    font-family: sans-serif;
-    font-weight:300;
-    font-size: 15px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: #CC6666;
-    border:2px solid #CC6666;
-    transition: all 0.3s;
-    padding: 5px;
-    margin-bottom: 15px;
-    width:30%;
-    box-sizing: border-box;
-    outline:0;
-    cursor: pointer;
-}
-
-#form1 input[type="submit"]:hover {
-    background:#CC4949;
 }
 
 [id^=modal-content] {
@@ -497,6 +479,38 @@ input {
     display: none;
     z-index: 3;
   }
+
+  #modal-content0:target {
+      display: flex;
+  }
+
+  #modal-content1:target {
+    display: flex;
+}
+
+#modal-content2:target {
+    display: flex;
+}
+
+#modal-content3:target {
+    display: flex;
+}
+
+#modal-content4:target {
+    display: flex;
+}
+
+#modal-content5:target {
+    display: flex;
+}
+
+#modal-content6:target {
+    display: flex;
+}
+
+#modal-content7:target {
+    display: flex;
+}
 
 [id^=modal-content] ul li {
     list-style: circle;
@@ -535,8 +549,7 @@ input[type=submit] {
     margin-bottom: 16px;
     background-color: #04AA6D;
     color: white;
-  }
-
+}
 
 /* Styling of Modal Video */
 
@@ -585,4 +598,4 @@ input[type=submit] {
     color: #fff;
     font-size: 30px;
     cursor: pointer;
-}
+} 

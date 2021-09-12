@@ -23,16 +23,8 @@ function flexibleonclick() {
 }
 // Modal Contact
 document.getElementById("cont").onclick = function() {
-  document.querySelector(".form").style.display = "flex";
+  document.querySelector(".contact").style.display = "flex";
 }
-<<<<<<< HEAD
-document.getElementsByClassName("close")[0].onclick = function() {
-  document.querySelector(".form").style.display = "none";
-}
-document.getElementById("send").onclick = function() {
-  document.querySelector(".form").style.display = "none";
-}
-=======
 document.getElementsByClassName("close0")[0].onclick = function() {
   document.querySelector(".contact").style.display = "none";
 }
@@ -148,4 +140,3 @@ if (video.paused) {
   btn.innerHTML = "Play";
 }
 }
->>>>>>> b933c43b55e8a1875e98a88a4486f5e9b7292377
