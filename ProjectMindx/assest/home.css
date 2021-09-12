@@ -293,11 +293,16 @@ header ul li a:hover {
     color: black;
     text-decoration: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 .content-image {
     height: 339px;
     border-radius: 15px;
+}
+
+.content-image:hover {
+    opacity: 0.8;
 }
 
 .text-content {
@@ -395,10 +400,17 @@ li a {
 }
 
 .container {
+<<<<<<< HEAD
     width: 400px;
     height: 400px;
     background-color: white;
     border-radius: 15px;
+=======
+    width: 500px;
+    height: 350px;
+    background-color: #F0F3F0;
+    border-radius: 10px;
+>>>>>>> b933c43b55e8a1875e98a88a4486f5e9b7292377
     position: relative;
     z-index: 1;
 }
@@ -410,7 +422,17 @@ li a {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 .close {
+=======
+input {
+    width: 50%;
+    display: block;
+    margin: 16px auto;
+}
+
+.close0, .close {
+>>>>>>> b933c43b55e8a1875e98a88a4486f5e9b7292377
     font-size: 28px;
     position: absolute;
     top: 0;
@@ -476,38 +498,6 @@ li a {
     z-index: 3;
   }
 
-  #modal-content0:target {
-      display: flex;
-  }
-
-  #modal-content1:target {
-    display: flex;
-}
-
-#modal-content2:target {
-    display: flex;
-}
-
-#modal-content3:target {
-    display: flex;
-}
-
-#modal-content4:target {
-    display: flex;
-}
-
-#modal-content5:target {
-    display: flex;
-}
-
-#modal-content6:target {
-    display: flex;
-}
-
-#modal-content7:target {
-    display: flex;
-}
-
 [id^=modal-content] ul li {
     list-style: circle;
 }
@@ -526,4 +516,73 @@ li a {
     padding: 20px 50px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+}
+
+[id^=result] {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+/* Styling of Modal Video */
+
+#myVideo {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+#modal-vid {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+#closebtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
 }
