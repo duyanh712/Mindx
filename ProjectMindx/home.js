@@ -24,11 +24,39 @@ function flexibleonclick() {
 
 // Modal Contact
 document.getElementById("cont").onclick = function() {
-  document.querySelector(".contact").style.display = "flex";
+  document.querySelector(".background").style.display = "flex";
 }
-document.getElementsByClassName("close0")[0].onclick = function() {
-  document.querySelector(".contact").style.display = "none";
+document.getElementById("close-modal-contact").onclick = function () {
+  document.querySelector(".background").style.display = "none";
 }
+//Validate form contact
+
+document.getElementById("send-form-contact").onclick = function () {
+  //5-12 character letter or number
+  var checkName = /^[A-Za-z]{3,50}$/;
+  var userID = document.getElementById("nameID").value;
+  //Minimum eight characters, at least one letter, one number 
+  var checkEmail = /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+  var passID = document.getElementById("emailID").value;
+ 
+  if(!checkName.test(userID))
+      alert("Please enter the name 3-50 character");
+  else if(!checkEmail.test(passID))
+      alert("Please enter email minimum 5 character and have @ and email domainame ")
+
+  else {
+      alert("Send successfully");
+      document.querySelector(".background").style.display = "none";
+  }
+      
+}
+
+// document.getElementById("cont").onclick = function() {
+//   document.querySelector(".contact").style.display = "flex";
+// }
+// document.getElementsByClassName("close0")[0].onclick = function() {
+//   document.querySelector(".contact").style.display = "none";
+// }
 
 var grid = document.getElementsByClassName("grid");
   grid[0].onclick = function() {
@@ -82,29 +110,29 @@ var close = document.getElementsByClassName("close");
     document.getElementById("modal-content7").style.display = "none";
   }
 
-var nameInput = document.getElementById("name-input");
-nameInput.onfocus = function() {
-  document.getElementById("result0").style.display = "inline-block";
-}
-nameInput.onblur = function() {
-  document.getElementById("result0").style.display = "none";
-}
+// var nameInput = document.getElementById("name-input");
+// nameInput.onfocus = function() {
+//   document.getElementById("result0").style.display = "inline-block";
+// }
+// nameInput.onblur = function() {
+//   document.getElementById("result0").style.display = "none";
+// }
 
-var emailInput = document.getElementById("email");
-emailInput.onfocus = function() {
-  document.getElementById("result1").style.display = "inline-block";
-}
-emailInput.onblur = function() {
-  document.getElementById("result1").style.display = "none";
-}
+// var emailInput = document.getElementById("email");
+// emailInput.onfocus = function() {
+//   document.getElementById("result1").style.display = "inline-block";
+// }
+// emailInput.onblur = function() {
+//   document.getElementById("result1").style.display = "none";
+// }
 
-var phoneInput = document.getElementById("phone-number");
-phoneInput.onfocus = function() {
-  document.getElementById("result2").style.display = "inline-block";
-}
-phoneInput.onblur = function() {
-  document.getElementById("result2").style.display = "none";
-}
+// var phoneInput = document.getElementById("phone-number");
+// phoneInput.onfocus = function() {
+//   document.getElementById("result2").style.display = "inline-block";
+// }
+// phoneInput.onblur = function() {
+//   document.getElementById("result2").style.display = "none";
+// }
 
 
 // Modal Video
