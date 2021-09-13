@@ -21,6 +21,7 @@ window.addEventListener("mouseup", function(event) {
 function flexibleonclick() {
   document.location = "flexible.html"
 }
+
 // Modal Contact
 document.getElementById("cont").onclick = function() {
   document.querySelector(".contact").style.display = "flex";
