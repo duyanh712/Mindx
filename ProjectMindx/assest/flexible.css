@@ -64,8 +64,9 @@ header ul li a:hover {
     display: flex;
 }
 .left-main {
+    margin-bottom: 50px;
     background: black;
-    width: 50%;
+    /* width: 50%; */
     height: 686px;
 }
 
@@ -176,6 +177,7 @@ header ul li a:hover {
 
 .foot {
     padding: 20px 80px;
+    border-top: grey solid 1px;
 }
 
 .row1 {
